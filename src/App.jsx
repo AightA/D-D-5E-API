@@ -10,18 +10,20 @@ import Rules from './components/Rules';
 
 const App = () => {
 	return (
-		<div className="flex">
-			<Sidebar />
-			<div className="flex-grow">
-				<Header />
-				<Routes>
-					<Route path="/" element={<Dashboard />} />
-					<Route path="/spells" element={<Spells />} />
-					<Route path="/items" element={<Items />} />
-					<Route path="/monsters" element={<Monsters />} />
-					<Route path="/rules" element={<Rules />} />
-					<Route path="*" element={<div>Page Not Found</div>} />
-				</Routes>
+		<div className="flex flex-col h-screen">
+			<Header />
+			<div className="flex flex-grow">
+				<Sidebar />
+				<div className="flex-grow p-6 overflow-y-auto">
+					<Routes>
+						<Route path="/" element={<Dashboard />} />
+						<Route path="/spells" element={<Spells />} />
+						<Route path="/items" element={<Items />} />
+						<Route path="/monsters" element={<Monsters />} />
+						<Route path="/rules" element={<Rules />} />
+						<Route path="*" element={<div>Page Not Found</div>} />
+					</Routes>
+				</div>
 			</div>
 		</div>
 	);

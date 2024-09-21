@@ -14,7 +14,7 @@ const Sidebar = () => {
 						<li>
 							<Link
 								to={item === 'dashboard' ? '/' : `/${item}`}
-								className="text-blue-500 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-yellow-300 transition duration-300"
+								className="text-white hover:text-violet-700 focus:outline-none focus:ring-2 focus:ring-lime-400 transition duration-300"
 							>
 								{firstItemUpperCase.concat(restOfStringItem)}
 							</Link>
