@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import { describe, it, expect } from 'vitest';
-import App from '../App';
+import App from '../../App';
 
 describe('App Navigation and rendering', () => {
 	it('should renders the dashboard on the default route', async () => {

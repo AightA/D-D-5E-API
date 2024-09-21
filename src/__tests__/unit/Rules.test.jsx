@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, waitFor, act } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
-import Rules from '../components/Rules';
+import Rules from '../../components/Rules';
 
 global.fetch = vi.fn();
 

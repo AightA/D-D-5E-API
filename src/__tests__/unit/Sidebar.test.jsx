@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../../components/Sidebar';
 import { describe, it, expect } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 
@@ -11,6 +11,7 @@ describe('renders Sidebar component', () => {
 			</MemoryRouter>
 		);
 
+		expect(screen.getByText('Dashboard')).toBeInTheDocument();
 		expect(screen.getByText('Spells')).toBeInTheDocument();
 		expect(screen.getByText('Monsters')).toBeInTheDocument();
 		expect(screen.getByText('Items')).toBeInTheDocument();
