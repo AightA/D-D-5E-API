@@ -15,11 +15,9 @@ describe('App Navigation and rendering', () => {
 			expect(element).toBeInTheDocument();
 		});
 
-		// Find the Spells link using the 'link' role and the name 'Spells'
 		const spellsLink = screen.getByRole('link', { name: 'Spells' });
 		await user.click(spellsLink);
 
-		// Check if the Spells page content is rendered
 		expect(screen.getByText('Spells')).toBeInTheDocument();
 	});
 
@@ -46,7 +44,6 @@ describe('render based on links ', () => {
 		spellsElements.forEach((element) => {
 			expect(element).toBeInTheDocument();
 		});
-		// expect(screen.getAllByText('Spells')).toBeInTheDocument();
 	});
 
 	it('should render monsters page', () => {
@@ -60,7 +57,6 @@ describe('render based on links ', () => {
 		monsterElements.forEach((element) => {
 			expect(element).toBeInTheDocument();
 		});
-		// expect(screen.getAllByText('Monsters')).toBeInTheDocument();
 	});
 
 	it('should render items page', () => {
@@ -74,7 +70,6 @@ describe('render based on links ', () => {
 		itemsElements.forEach((element) => {
 			expect(element).toBeInTheDocument();
 		});
-		// expect(screen.getAllByText('Items')).toBeInTheDocument();
 	});
 
 	it('should render rules page', () => {
@@ -89,6 +84,5 @@ describe('render based on links ', () => {
 		rulesElements.forEach((element) => {
 			expect(element).toBeInTheDocument();
 		});
-		// expect(screen.getAllByText('Rules')).toBeInTheDocument();
 	});
 });

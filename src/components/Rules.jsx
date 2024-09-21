@@ -12,11 +12,9 @@ const Rules = () => {
 				if (!res.ok) throw new Error('Failed to fetch rules');
 
 				const data = await res.json();
-
 				const uniqueRules = Array.from(
 					new Set(data.results.map((rule) => rule.name))
 				).map((name) => data.results.find((rule) => rule.name === name));
-
 				setRules(uniqueRules);
 			} catch (err) {
 				setError(err.message);
