@@ -32,8 +32,8 @@ const Spells = () => {
 				Here's all the spells that you would require for your characters.
 			</p>
 			<ul className="list-disc pl-5">
-				{spells.map((spell) => (
-					<li key={spell.index} className="mb-2">
+				{spells.map((spell, index) => (
+					<li key={index} className="mb-2">
 						{spell.name}
 					</li>
 				))}

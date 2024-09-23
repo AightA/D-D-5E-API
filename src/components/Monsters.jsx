@@ -32,8 +32,8 @@ const Monsters = () => {
 			<h1 className="text-2xl font-bold">Monsters</h1>
 			<p className="my-2">Here's all the monsters.</p>
 			<ul className="list-disc pl-5">
-				{monsters.map((monster) => (
-					<li key={monster.index} className="mb-2">
+				{monsters.map((monster, index) => (
+					<li key={index} className="mb-2">
 						{monster.name}
 					</li>
 				))}

@@ -30,8 +30,8 @@ const items = () => {
 			<h1 className="text-2xl font-bold">Items</h1>
 			<p className="my-2">Here's the items of the game.</p>
 			<ul className="list-disc pl-5">
-				{items?.map((item) => (
-					<li key={item.index} className="mb-2">
+				{items?.map((item, index) => (
+					<li key={index} className="mb-2">
 						{item.name}
 					</li>
 				))}
