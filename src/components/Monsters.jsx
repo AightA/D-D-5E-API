@@ -22,8 +22,6 @@ const Monsters = () => {
 		fetchMonsters();
 	}, []);
 
-	console.log('data', monsters);
-
 	if (loading) return <div>Loading monsters in a moment...</div>;
 	if (error) return <div>Error: {error}</div>;
 
