@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: 'https://github.com/AightA/D-D-5E-API.git',
 	plugins: [react()],
 	test: {
 		globals: true,
