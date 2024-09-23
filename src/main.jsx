@@ -6,7 +6,7 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename="/D-D-5E-API">
 			<App />
 		</BrowserRouter>
 	</StrictMode>
